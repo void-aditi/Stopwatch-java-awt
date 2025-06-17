@@ -37,6 +37,7 @@ class Myframes extends Frame implements Runnable
             public void windowClosing(WindowEvent e) 
             {
                 Myframes temp = (Myframes)(e.getSource());
+                temp.flag = false;
                 temp.dispose();
             }
         });
